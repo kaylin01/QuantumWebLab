@@ -1,0 +1,164 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 90%; /* Adjusted for smaller screens */
+    max-width: 600px; /* Maintain a max width for larger screens */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    width: 134px; /* Reduced width */
+    text-align: center;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    margin: 10px;
+}
+
+hr {
+    width: 80px; /* Adjusted width */
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+h1 {
+    font-size: 40px; /* Adjusted font size */
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 18px; /* Reduced font size for mobile */
+}
+
+.social-icons {
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+a {
+    color: black;
+}
+
+i {
+    font-size: 30px; /* Adjusted icon size */
+    margin: 5px; /* Reduced margin */
+    color: white;
+}
+
+.wrapper-progress {
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.progress {
+    width: 0%;
+    background-color: white;
+    border-radius: 5px;
+    height: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.progress span {
+    position: relative;
+    font-weight: 800;
+    top: 10px;
+    left: 25px;
+}
+
+.bacground {
+    position: fixed;
+    background: url('./back.jpg') #08093cb3;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .top p {
+        font-size: 12px;
+        width: 100px;
+    }
+
+    hr {
+        width: 60px;
+    }
+
+    i {
+        font-size: 25px;
+    }
+
+    .social-icons {
+        flex-direction: column; /* Stack icons vertically on smaller screens */
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px; /* Add padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    i {
+        font-size: 20px;
+    }
+
+    .top p {
+        font-size: 10px;
+        width: auto;
+    }
+
+    .wrapper-progress {
+        height: 8px; /* Adjust height for progress bar */
+    }
+
+    .progress span {
+        top: 5px;
+        left: 15px;
+    }
+}
