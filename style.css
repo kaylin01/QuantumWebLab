@@ -145,7 +145,10 @@ i {
     }
 
     i {
-        font-size: 20px;
+        font-size: 20px; /* Reduce icon size */
+    }
+        .social-icons {
+        gap: 5px; /* Adjust spacing for smaller screens */
     }
 
     .top p {
