@@ -49,9 +49,14 @@ h3 {
 .social-icons {
     margin: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center; /* Centers icons horizontally */
+    gap: 10px; /* Adds spacing between icons */
+    flex-wrap: nowrap; /* Prevents wrapping to a new line */
     color: white;
+    overflow: auto; /* Allows scrolling if icons exceed the screen width */
+    text-align: center;
 }
+
 
 a {
     color: black;
@@ -103,65 +108,9 @@ i {
 }
 
 /* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 35px;
+@media screen and (max-width:640px){
+    .container{
+        width: 90%;
     }
-
-    h3 {
-        font-size: 16px;
-    }
-
-    .top p {
-        font-size: 12px;
-        width: 100px;
-    }
-
-    hr {
-        width: 60px;
-    }
-
-    i {
-        font-size: 25px;
-    }
-
-    .social-icons {
-        flex-direction: column; /* Stack icons vertically on smaller screens */
-    }
-
-    .container {
-        width: 100%;
-        padding: 10px; /* Add padding for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 30px;
-    }
-
-    h3 {
-        font-size: 14px;
-    }
-
-    i {
-        font-size: 20px; /* Reduce icon size */
-    }
-        .social-icons {
-        gap: 5px; /* Adjust spacing for smaller screens */
-    }
-
-    .top p {
-        font-size: 10px;
-        width: auto;
-    }
-
-    .wrapper-progress {
-        height: 8px; /* Adjust height for progress bar */
-    }
-
-    .progress span {
-        top: 5px;
-        left: 15px;
-    }
+    
 }
